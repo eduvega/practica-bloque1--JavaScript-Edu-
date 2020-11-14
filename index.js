@@ -29,29 +29,16 @@
 
 ///////////////////////////////////////////////////////////////////////
 
-/* Metodo para meter cosas despues de un elemento:
-Los parámetros son:
-e: el nodo tras el que se quiere insertar otro.
-i: el nodo que se quiere insertar. 
-function insertAfter(e,i){ 
-  if(e.nextSibling){ 
-      e.parentNode.insertBefore(i,e.nextSibling); 
-  } else { 
-     e.parentNode.appendChild(i); 
-  }
-} */
-
-function insertAfter(li, div) {
-  if (li.nextSibling) {
-    li.parentNode.insertBefore(li, div.nextSibling);
-  } else {
-    li.parentNode.appendChild(div);
-  }
-}
-
 var li = document.createElement("li");
-var contenidoLi = document.createTextNode("Color: White");
+var span = document.createElement("span");
+
+var contenidoSpan = document.createTextNode("hola");
+var contenidoLi = document.createTextNode("hey");
+
+
 li.appendChild(contenidoLi);
+span.appendChild(contenidoSpan);
+document.body.appendChild(span);
 document.body.appendChild(li);
 
 var div = document.createElement("div");
