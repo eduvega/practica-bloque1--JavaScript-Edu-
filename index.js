@@ -27,25 +27,6 @@
 // para buscar los pares hacerlo con el querySelector
 // Buena suerte!
 
-///////////////////////////////////////////////////////////////////////
-
-var li = document.createElement("li");
-var span = document.createElement("span");
-
-var contenidoSpan = document.createTextNode("hola");
-var contenidoLi = document.createTextNode("hey");
-
-
-li.appendChild(contenidoLi);
-span.appendChild(contenidoSpan);
-document.body.appendChild(span);
-document.body.appendChild(li);
-
-var div = document.createElement("div");
-div.className = "color-name";
-var contenidoDiv = document.createTextNode("Color: White");
-div.appendChild(contenidoDiv);
-document.body.appendChild(div);
 
 const colorList = [
   {
